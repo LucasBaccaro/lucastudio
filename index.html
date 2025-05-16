@@ -3,46 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad</title>
+    <title>Política de Privacidad - Lucas Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 2rem;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
         }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
         }
-        p {
-            margin-bottom: 20px;
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
         }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+        .content {
+            padding: 2.5rem;
         }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
         .contact {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
+            background-color: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .contact h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .contact a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .contact a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Política de Privacidad</h1>
-        
-        <p>Esta aplicación utiliza la API de WhatsApp Business para proporcionar servicios de mensajería. No recopilamos, almacenamos ni compartimos datos personales fuera de lo requerido por WhatsApp. Cumplimos con todas las políticas de privacidad y protección de datos aplicables.</p>
+        <div class="header">
+            <h1>Política de Privacidad</h1>
+            <p>Lucas Studio</p>
+        </div>
 
-        <div class="contact">
-            <p>Si tienes alguna pregunta sobre nuestra política de privacidad, no dudes en contactarnos a: <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></p>
+        <div class="content">
+            <div class="section">
+                <h2>Información General</h2>
+                <p>Esta aplicación utiliza la API de WhatsApp Business para proporcionar servicios de mensajería. Nos comprometemos a proteger tu privacidad y a manejar tus datos personales con el máximo cuidado y seguridad.</p>
+            </div>
+
+            <div class="section">
+                <h2>Recopilación de Datos</h2>
+                <p>No recopilamos, almacenamos ni compartimos datos personales fuera de lo requerido por WhatsApp. Cumplimos con todas las políticas de privacidad y protección de datos aplicables, incluyendo el RGPD y otras regulaciones de privacidad relevantes.</p>
+            </div>
+
+            <div class="section">
+                <h2>Seguridad</h2>
+                <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger tus datos personales contra el acceso no autorizado, la pérdida o la alteración.</p>
+            </div>
+
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p>Si tienes alguna pregunta sobre nuestra política de privacidad o el manejo de tus datos, no dudes en contactarnos a: <a href="mailto:lucastudio.ba@gmail.com">lucastudio.ba@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Última actualización: Marzo 2024</p>
         </div>
     </div>
 </body>
